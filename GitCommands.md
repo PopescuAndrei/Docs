@@ -1,23 +1,13 @@
 ### Removing file already pushed to repository and later ignored in git ignore.
-
+```
 git rm -r one-of-the-directories
 git commit -m "Remove duplicated directory"
 git push origin <your-git-branch> (typically 'master', but not always)
-
+```
 ---
 ### To do after I rename a repository.
 git@github.com:someuser/someproject.git   ->    git@github.com:someuser/newprojectname.git
-
-Firstly, cd to your local git directory, and find out what remote name(s) refer to that URL
-
-$ git remote -v
-origin  git@github.com:someuser/someproject.git
-Then, set the new URL
-
+```
 $ git remote set-url origin git@github.com:someuser/newprojectname.git
-or in older versions of git, you might need
-
-$ git remote rm origin
-$ git remote add origin git@github.com:someuser/newprojectname.git
-
+```
 ---
