@@ -11,3 +11,8 @@ git@github.com:someuser/someproject.git   ->    git@github.com:someuser/newproje
 $ git remote set-url origin git@github.com:someuser/newprojectname.git
 ```
 ---
+
+### Git Config Email and Password
+```
+$ git config --global user.email "your_email@example.com"
+$ git config --global user.email //for confirming
