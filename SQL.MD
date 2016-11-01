@@ -16,7 +16,7 @@ from dba_users d, sys.user$ u
 where d.username = upper('&&username')
 and u.user# = d.user_id;   
 
-alter user "EDNADB" identified by values 'BC9EA855F06FEC11';
+alter user "USERNAME" identified by values 'THE_HASH_FROM_THE_LAST_STATEMENT_RESULT';
 
 commit;
 ```
